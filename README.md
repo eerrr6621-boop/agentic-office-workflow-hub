@@ -23,7 +23,7 @@ The goal was not to build a toy chatbot. The goal was to test whether AI agents 
 
 The screenshot below is generated from sanitized server terminal logs. It shows the Agent gateway startup, model routing, plugin registration, WeChat/Feishu/Rokid channel startup, scheduled cron workflows, delivery logs, and cleanup verification.
 
-![Sanitized server runtime logs](assets/server-agent-logs-sanitized-20260430.png)
+![Sanitized server runtime logs](server-agent-logs-sanitized-20260430.png)
 
 ## Architecture
 
@@ -69,22 +69,20 @@ flowchart LR
 
 ```text
 .
-├── assets/
-│   ├── server-agent-logs-sanitized-20260430.png
-│   └── server-agent-logs-sanitized-20260430.txt
-├── docs/
-│   ├── architecture.md
-│   ├── impact.md
-│   ├── operations.md
-│   ├── security.md
-│   └── writing-knowledge-workflow.md
-├── examples/
-│   ├── config/agent-config.example.json
-│   ├── cron/agent-crontab.example
-│   └── systemd/agent-gateway.service.example
-└── scripts/
-    ├── sanitize_logs.py
-    └── verify_no_secrets.py
+├── README.md
+├── APPLICATION_TEXT.md
+├── ARCHITECTURE.md
+├── IMPACT.md
+├── OPERATIONS.md
+├── SECURITY.md
+├── WRITING_KNOWLEDGE_WORKFLOW.md
+├── server-agent-logs-sanitized-20260430.png
+├── server-agent-logs-sanitized-20260430.txt
+├── agent-config.example.json
+├── agent-crontab.example
+├── agent-gateway.service.example
+├── sanitize_logs.py
+└── verify_no_secrets.py
 ```
 
 ## Why This Matters
@@ -102,5 +100,4 @@ The most valuable lesson was architectural. A capable AI assistant should not hi
 
 This is a public, sanitized portfolio repository. Raw server archives, private knowledge bases, API tokens, conversation logs, and personal/company source materials are intentionally excluded.
 
-See [docs/security.md](docs/security.md) for the sanitization policy.
-
+See [SECURITY.md](SECURITY.md) for the sanitization policy.

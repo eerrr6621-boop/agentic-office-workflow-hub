@@ -1,0 +1,87 @@
+# Server / Agent Runtime Evidence
+time: Thu Apr 30 02:51:20 CST 2026
+host: VM-0-8-ubuntu
+archive: /home/admin/openclaw-disabled-20260429-211719
+
+## 1) OpenClaw Gateway / Agent startup logs
+Apr 29 21:17:38 VM-0-8-ubuntu openclaw[3804722]: 2026-04-29T21:17:38.201+08:00 [gateway] loading configuration…
+Apr 29 21:17:38 VM-0-8-ubuntu openclaw[3804722]: 2026-04-29T21:17:38.322+08:00 [gateway] resolving authentication…
+Apr 29 21:17:38 VM-0-8-ubuntu openclaw[3804722]: 2026-04-29T21:17:38.353+08:00 [gateway] starting...
+Apr 29 21:17:45 VM-0-8-ubuntu openclaw[3804722]: 2026-04-29T21:17:45.433+08:00 [plugins] [rokid-openclaw-bridge] Plugin registered.
+Apr 29 21:17:45 VM-0-8-ubuntu openclaw[3804722]: 2026-04-29T21:17:45.435+08:00 [plugins] [rokid-openclaw-bridge] Channel plugin registered for onboarding.
+Apr 29 21:17:47 VM-0-8-ubuntu openclaw[3804722]: 2026-04-29T21:17:47.809+08:00 [gateway] [plugins] channel "rokid-openclaw-bridge" registered incomplete metadata; filled missing docsPath (plugin=rokid-openclaw-bridge, source=/home/admin/.openclaw/extensions/rokid-openclaw-gateway-compatible/src/index.ts)
+Apr 29 21:17:47 VM-0-8-ubuntu openclaw[3804722]: 2026-04-29T21:17:47.821+08:00 [gateway] starting HTTP server...
+Apr 29 21:17:47 VM-0-8-ubuntu openclaw[3804722]: 2026-04-29T21:17:47.825+08:00 [canvas] host mounted at http://127.0.0.1:18789/__openclaw__/canvas/ (root /home/admin/.openclaw/canvas)
+Apr 29 21:17:47 VM-0-8-ubuntu openclaw[3804722]: 2026-04-29T21:17:47.940+08:00 [health-monitor] started (interval: 300s, startup-grace: 60s, channel-connect-grace: 120s)
+Apr 29 21:17:48 VM-0-8-ubuntu openclaw[3804722]: 2026-04-29T21:17:48.070+08:00 [gateway] agent model: openai-codex/gpt-5.4
+Apr 29 21:17:48 VM-0-8-ubuntu openclaw[3804722]: 2026-04-29T21:17:48.071+08:00 [gateway] ready (4 plugins: feishu, memory-core, openclaw-weixin, rokid-openclaw-bridge; 9.7s)
+Apr 29 21:17:48 VM-0-8-ubuntu openclaw[3804722]: 2026-04-29T21:17:48.073+08:00 [gateway] log file: /tmp/openclaw/openclaw-2026-04-29.log
+Apr 29 21:17:48 VM-0-8-ubuntu openclaw[3804722]: 2026-04-29T21:17:48.186+08:00 [gateway] starting channels and sidecars...
+Apr 29 21:17:48 VM-0-8-ubuntu openclaw[3804722]: 2026-04-29T21:17:48.385+08:00 [info]: [ 'client ready' ]
+Apr 29 21:17:48 VM-0-8-ubuntu openclaw[3804722]: 2026-04-29T21:17:48.587+08:00 [hooks] loaded 4 internal hook handlers
+Apr 29 21:17:58 VM-0-8-ubuntu openclaw[3804722]: 2026-04-29T21:17:58.410+08:00 [bonjour] watchdog detected non-announced service; attempting re-advertise (gateway fqdn=VM-0-8-ubuntu (OpenClaw)._openclaw-gw._tcp.local. host=openclaw.local. port=18789 state=probing)
+Apr 29 21:18:15 VM-0-8-ubuntu openclaw[3804722]: 2026-04-29T21:18:15.146+08:00 [bonjour] restarting advertiser (service stuck in announcing for 16735ms (gateway fqdn=VM-0-8-ubuntu (OpenClaw)._openclaw-gw._tcp.local. host=openclaw.local. port=18789 state=announcing))
+Apr 29 21:18:18 VM-0-8-ubuntu openclaw[3804722]: 2026-04-29T21:18:18.056+08:00 [openclaw-weixin] [***WECHAT_BOT_REDACTED***] starting weixin provider (https://ilinkai.weixin.qq.com)
+Apr 29 21:18:18 VM-0-8-ubuntu openclaw[3804722]: 2026-04-29T21:18:18.057+08:00 [openclaw-weixin] [***WECHAT_BOT_REDACTED***] weixin logs: /tmp/openclaw/openclaw-2026-04-29.log
+Apr 29 21:18:18 VM-0-8-ubuntu openclaw[3804722]: 2026-04-29T21:18:18.156+08:00 [rokid-openclaw-bridge] [****] Starting WebSocket Bridge service...
+Apr 29 21:18:18 VM-0-8-ubuntu openclaw[3804722]: 2026-04-29T21:18:18.157+08:00 [rokid-openclaw-bridge] [****] Config: linkCode=***REDACTED***, wsUrl=wss://rcs.rokid.com/claw/ws/link
+Apr 29 21:18:18 VM-0-8-ubuntu openclaw[3804722]: 2026-04-29T21:18:18.159+08:00 [rokid-openclaw-bridge] Config: linkCode=***REDACTED***, wsUrl=wss://rcs.rokid.com/claw/ws/link
+Apr 29 21:18:18 VM-0-8-ubuntu openclaw[3804722]: 2026-04-29T21:18:18.160+08:00 [rokid-openclaw-bridge] Connecting to wss://rcs.rokid.com/claw/ws/link?linkCode=***REDACTED***&linkSecret***REDACTED*** (attempt 1)
+Apr 29 21:18:18 VM-0-8-ubuntu openclaw[3804722]: 2026-04-29T21:18:18.207+08:00 [heartbeat] started
+Apr 29 21:18:18 VM-0-8-ubuntu openclaw[3804722]: 2026-04-29T21:18:18.224+08:00 [feishu] starting feishu[default] (mode: websocket)
+Apr 29 21:18:18 VM-0-8-ubuntu openclaw[3804722]: 2026-04-29T21:18:18.227+08:00 [feishu] feishu[default]: bot open_id resolved: ***REDACTED***
+Apr 29 21:18:18 VM-0-8-ubuntu openclaw[3804722]: 2026-04-29T21:18:18.509+08:00 [openclaw-weixin] weixin monitor started (https://ilinkai.weixin.qq.com, account=***REDACTED***)
+Apr 29 21:18:18 VM-0-8-ubuntu openclaw[3804722]: 2026-04-29T21:18:18.510+08:00 [openclaw-weixin] [weixin] resuming from previous sync buf (104 bytes)
+Apr 29 21:18:18 VM-0-8-ubuntu openclaw[3804722]: 2026-04-29T21:18:18.533+08:00 [delivery-recovery] Found 2 pending delivery entries — starting recovery
+Apr 29 21:18:18 VM-0-8-ubuntu openclaw[3804722]: 2026-04-29T21:18:18.551+08:00 [info]: [ 'event-dispatch is ready' ]
+Apr 29 21:18:18 VM-0-8-ubuntu openclaw[3804722]: 2026-04-29T21:18:18.554+08:00 [feishu] feishu[default]: starting WebSocket connection...
+Apr 29 21:18:18 VM-0-8-ubuntu openclaw[3804722]: 2026-04-29T21:18:18.556+08:00 [info]: [
+Apr 29 21:18:18 VM-0-8-ubuntu openclaw[3804722]:   '[ws]',
+Apr 29 21:18:18 VM-0-8-ubuntu openclaw[3804722]:   'receive events or callbacks through persistent connection only available in self-build & Feishu app, Configured in:\n' +
+Apr 29 21:18:18 VM-0-8-ubuntu openclaw[3804722]:     '        Developer Console(开发者后台) \n' +
+Apr 29 21:18:18 VM-0-8-ubuntu openclaw[3804722]:     '          ->\n' +
+Apr 29 21:18:18 VM-0-8-ubuntu openclaw[3804722]:     '        Events and Callbacks(事件与回调)\n' +
+Apr 29 21:18:18 VM-0-8-ubuntu openclaw[3804722]:     '          -> \n' +
+Apr 29 21:18:18 VM-0-8-ubuntu openclaw[3804722]:     '        Mode of event/callback subscription(订阅方式)\n' +
+Apr 29 21:18:18 VM-0-8-ubuntu openclaw[3804722]:     '          -> \n' +
+Apr 29 21:18:18 VM-0-8-ubuntu openclaw[3804722]:     '        Receive events/callbacks through persistent connection(使用 长连接 接收事件/回调)'
+Apr 29 21:18:18 VM-0-8-ubuntu openclaw[3804722]: ]
+Apr 29 21:18:18 VM-0-8-ubuntu openclaw[3804722]: 2026-04-29T21:18:18.559+08:00 [feishu] feishu[default]: WebSocket client started
+Apr 29 21:18:18 VM-0-8-ubuntu openclaw[3804722]: 2026-04-29T21:18:18.885+08:00 [info]: [ '[ws]', 'ws client ready' ]
+Apr 29 21:18:19 VM-0-8-ubuntu openclaw[3804722]: 2026-04-29T21:18:19.221+08:00 [delivery-recovery] Retry failed for delivery ***UUID***: sendMessage ret=-2
+Apr 29 21:18:19 VM-0-8-ubuntu openclaw[3804722]: 2026-04-29T21:18:19.546+08:00 [delivery-recovery] Retry failed for delivery ***UUID***: sendMessage ret=-2
+Apr 29 21:18:19 VM-0-8-ubuntu openclaw[3804722]: 2026-04-29T21:18:19.552+08:00 [delivery-recovery] Delivery recovery complete: 0 recovered, 2 failed, 0 skipped (max retries), 0 deferred (backoff)
+Apr 29 21:18:24 VM-0-8-ubuntu openclaw[3804722]: 2026-04-29T21:18:24.327+08:00 [rokid-openclaw-bridge] Connected to wss://rcs.rokid.com/claw/ws/link
+Apr 29 21:18:24 VM-0-8-ubuntu openclaw[3804722]: 2026-04-29T21:18:24.328+08:00 [rokid-openclaw-bridge] >>> SEND: {"type":"status","connected":true,"gatewayReachable":true}
+
+## 2) Scheduled workflow crontab before cleanup
+5 6 * * * /home/admin/.openclaw/bin/wechat_delivery_guard_remote.sh weather >> /home/admin/.openclaw/wechat_delivery_guard.log 2>&1
+5 12 * * * /home/admin/.openclaw/bin/wechat_delivery_guard_remote.sh noon >> /home/admin/.openclaw/wechat_delivery_guard.log 2>&1
+5 18 * * * /home/admin/.openclaw/bin/wechat_delivery_guard_remote.sh evening >> /home/admin/.openclaw/wechat_delivery_guard.log 2>&1
+
+## 3) WeChat delivery guard logs
+weather: no resend content found
+noon: resend result status=200 raw={}
+evening: resend result status=200 raw={}
+weather: resend result status=200 raw={"ret":-2}
+weather: fallback result ok=False serverchan: status=None raw=not configured; pushplus: status=None raw=not configured
+weather: rokid_sync=True /home/admin/.openclaw/rokid-outbox/1777241101958-weather-wechat.json
+noon: resend result status=200 raw={}
+noon: rokid_sync=False disabled
+evening: already delivered; rokid_sync=False disabled
+weather: already delivered; rokid_sync=False disabled
+noon: resend result status=200 raw={"ret":-2}
+noon: fallback result ok=False serverchan: status=None raw=not configured; pushplus: status=None raw=not configured
+noon: rokid_sync=False disabled
+evening: resend result status=200 raw={"ret":-2}
+evening: fallback result ok=False serverchan: status=None raw=not configured; pushplus: status=None raw=not configured
+evening: rokid_sync=False disabled
+weather: already delivered; rokid_sync=False disabled
+noon: already delivered; rokid_sync=False disabled
+evening: resend result status=200 raw={}
+evening: rokid_sync=False disabled
+
+## 4) Runtime cleanup verification
+services:
+processes:
+ports:
