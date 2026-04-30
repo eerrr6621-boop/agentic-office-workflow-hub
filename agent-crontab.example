@@ -1,0 +1,5 @@
+# Example only. Do not commit real paths or credentials.
+5 6 * * * /opt/agent-workflows/bin/delivery_guard.sh weather >> /var/log/agent-workflows/delivery_guard.log 2>&1
+5 12 * * * /opt/agent-workflows/bin/delivery_guard.sh noon >> /var/log/agent-workflows/delivery_guard.log 2>&1
+5 18 * * * /opt/agent-workflows/bin/delivery_guard.sh evening >> /var/log/agent-workflows/delivery_guard.log 2>&1
+

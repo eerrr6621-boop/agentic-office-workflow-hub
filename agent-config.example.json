@@ -1,0 +1,26 @@
+{
+  "model": "provider/model-name",
+  "reasoning": "high",
+  "channels": {
+    "feishu": {
+      "enabled": true,
+      "mode": "websocket",
+      "appId": "${FEISHU_APP_ID}",
+      "appSecret": "${FEISHU_APP_SECRET}"
+    },
+    "wechat": {
+      "enabled": true,
+      "account": "${WECHAT_ACCOUNT}"
+    },
+    "wearableBridge": {
+      "enabled": false,
+      "endpoint": "${WEARABLE_BRIDGE_URL}"
+    }
+  },
+  "tools": {
+    "search": ["brave", "firecrawl", "youtube"],
+    "knowledgeBase": "notion-or-local-kb",
+    "documents": ["docx", "xlsx", "pptx"]
+  }
+}
+
